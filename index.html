@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title>Amol Shinde Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-
     <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
@@ -18,536 +15,393 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-
     <style>
-        /*======================================
-        // ABOUT
-        ======================================*/
-        .about-mf .box-shadow-full {
-            padding-top: 4rem;
-            padding-bottom: 4rem;
-        }
-
-        .about-mf .about-img {
-            margin-bottom: 2rem;
-        }
-
-        .about-mf .about-img img {
-            margin-left: 10px;
-        }
-
-        .skill-mf .progress {
-            margin: 0.5rem 0 1.2rem 0;
-            border-radius: 0;
-            height: 0.7rem;
-        }
-
-        .skill-mf .progress .progress-bar {
-            height: 0.7rem;
-            background-color: #ffbd39;
-        }
-
-        /* Animation styles */
-        #typing-animation {
-            position: relative;
-            font-size: 30px;
-            font-weight: bold;
-            color: rgb(255, 255, 255);
-            overflow: hidden;
-            white-space: nowrap;
-            animation: typing 3s steps(20, end) infinite;
-        }
-
-        #typing-animation:before {
-            content: "";
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 100%;
-            background-color: #ccc;
-            animation: typing-cursor 0.5s ease-in-out infinite;
-        }
-
-        @keyframes typing {
-            from { width: 0; }
-            to { width: 100%; }
-        }
-
-        @keyframes typing-cursor {
-            from { width: 5px; }
-            to { width: 0; }
-        }
-
-        /* Project image zoom effect */
-        .zoom-effect {
-            overflow: hidden;
-            transition: transform 0.3s ease-out;
-        }
-
-        .zoom-effect:hover {
-            transform: scale(1.1);
-        }
+        .about-mf .box-shadow-full{padding-top:4rem;padding-bottom:4rem}
+        .about-mf .about-img{margin-bottom:2rem}
+        .about-mf .about-img img{margin-left:10px}
+        .skill-mf .progress{margin:.5rem 0 1.2rem 0;border-radius:0;height:.7rem}
+        .skill-mf .progress .progress-bar{height:.7rem;background-color:#ffbd39}
+        #typing-animation{position:relative;font-size:30px;font-weight:bold;color:rgb(255,255,255);overflow:hidden;white-space:nowrap;animation:typing 3s steps(20,end) infinite}
+        #typing-animation:before{content:"";top:0;left:0;width:0;height:100%;background-color:#ccc;animation:typing-cursor .5s ease-in-out infinite}
+        @keyframes typing{from{width:0}to{width:100%}}
+        @keyframes typing-cursor{from{width:5px}to{width:0}}
+        .zoom-effect{overflow:hidden;transition:transform .3s ease-out}
+        .zoom-effect:hover{transform:scale(1.1)}
     </style>
 </head>
-
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Amol Shinde</a>
-            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
-                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="oi oi-menu"></span> Menu
-            </button>
-
-            <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav nav ml-auto">
-                    <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-                    <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-                    <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-                    <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Amol Shinde</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav nav ml-auto">
+                <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+                <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+                <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+                <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+            </ul>
         </div>
-    </nav>
-
-    <!-- Home Section -->
-    <section id="home-section" class="hero">
-        <div class="home-slider owl-carousel">
-            <div class="slider-item">
-                <div class="overlay"></div>
-                <div class="container">
-                    <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
-                        data-scrollax-parent="true">
-                        <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/);">
-                            <div class="overlay"></div>
-                        </div>
-                        <div class="one-forth d-flex align-items-center ftco-animate"
-                            data-scrollax=" properties: { translateY: '70%' }">
-                            <div class="text">
-                                <span class="subheading">Hello!</span>
-                                <h1 class="mb-4 mt-3">I'm <span>Amol Shinde</span></h1>
-
-                                <!-- Typing animation -->
-                                <span id="typing-animation"></span>
-
-                                <script>
-                                    const typingAnimationElement = document.getElementById('typing-animation');
-                                    const typingTexts = [
-                                        'Angular Developer  ',
-                                        'TypeScript & JavaScript Expert   ',
-                                        'Full-Stack Explorer (Angular + ASP.NET)  ',
-                                        'Master of Science in Computer Science  ',
-                                    ];
-
-                                    function playTypingAnimation(text) {
-                                        for (let i = 0; i < text.length; i++) {
-                                            setTimeout(() => {
-                                                typingAnimationElement.textContent += text[i];
-                                            }, i * 200);
-                                        }
-                                        setTimeout(() => {
-                                            typingAnimationElement.textContent = '';
-                                            playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
-                                        }, text.length * 200);
-                                    }
-
-                                    playTypingAnimation(typingTexts[0]);
-                                </script>
-
-                                <br><br>
-                                <h2>A Front-End Developer</h2>
-                                <p>
-                                    <a href="https://github.com/amolinfo9/" class="btn btn-primary py-3 px-4">My Works</a>
-                                    <a href="https://www.linkedin.com/in/amol-shinde-718a39351/" class="btn btn-white btn-outline-white py-3 px-4">LinkedIn</a>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
-        <div class="container">
-            <div class="row">
-                <div class="row d-flex align-items-stretch">
-                    <div class="col-md-6 col-lg-5 d-flex">
-                        <div class="img-about img d-flex align-items-stretch">
-                            <div class="overlay">
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-5">
-                                        <div class="about-img">
-                                            <img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-7">
-                                        <div class="about-info">
-                                            <p><span class="title-s">Name: </span> <span>Amol Shinde</span></p>
-                                            <p><span class="title-s">Job Role: </span> <span>Front-End Developer</span></p>
-                                            <p><span class="title-s">Experience: </span> <span>Nearly 3 Years</span></p>
-                                            <p><span class="title-s">Address: </span> <span>Pune, India</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="skill-mf">
-                                    <p class="title-s">Skills</p>
-
-                                    <span>Angular 16–20</span> <span class="pull-right">95%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-
-                                    <span>TypeScript / JavaScript (ES6+)</span> <span class="pull-right">95%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-
-                                    <span>RxJS / NgRx State Management</span> <span class="pull-right">90%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-
-                                    <span>Responsive Web Design</span> <span class="pull-right">90%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-
-                                    <span>RESTful API Integration</span> <span class="pull-right">88%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-
-                                    <span>ASP.NET Core Web API</span> <span class="pull-right">55%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
-                        <div class="row justify-content-start pb-3">
-                            <div class="col-md-12 heading-section ftco-animate">
-                                <h1 class="big">About</h1>
-                                <h2 class="mb-4">About Me</h2>
-                                <p>With nearly 3 years of experience in front-end development, I specialise in building scalable, high-performance Single Page Applications (SPAs) using Angular 16–20 (currently Angular 20), TypeScript, NgRx, and RxJS. I have successfully delivered enterprise-grade web applications across Legal Case Management, Insurance, and E-commerce domains, with a strong focus on performance, user experience, and maintainability.</p>
-                                <p>Proficient in state management, REST API integration, reactive forms, lazy loading, AOT compilation, and bundle size optimisation, I have improved application load times by up to 45% and accelerated feature delivery by 30%. I also have hands-on exposure to ASP.NET Core Web API and SQL, and actively work with Prismatic for third-party enterprise integrations. Experienced in Agile environments, I collaborate effectively with cross-functional teams to ensure timely, high-quality project delivery.</p>
-                                <p>Passionate about crafting intuitive, responsive, and user-centric interfaces while continuously exploring the latest front-end trends, performance optimisation techniques, and full-stack development practices.</p>
-
-                                <ul class="about-info mt-4 px-md-0 px-2">
-                                    <li class="d-flex"><span>Profile:</span> <span>Front-End Developer (Angular)</span></li>
-                                    <li class="d-flex"><span>Domain:</span> <span>Legal Case Management, Insurance, E-commerce</span></li>
-                                    <li class="d-flex"><span>Education:</span> <span>Master of Science in Computer Science</span></li>
-                                    <li class="d-flex"><span>Languages:</span> <span>English, Hindi, Marathi</span></li>
-                                    <li class="d-flex"><span>Technologies:</span> <span>Angular 16–20, TypeScript, JavaScript, RxJS, NgRx, ASP.NET Core (Learning)</span></li>
-                                    <li class="d-flex"><span>Integration:</span> <span>Prismatic (Third-Party Integration Platform)</span></li>
-                                    <li class="d-flex"><span>Dev Tools:</span> <span>Git, Bitbucket, JIRA, VS Code, Visual Studio 2022, IntelliJ IDEA, Azure DevOps</span></li>
-                                    <li class="d-flex"><span>Other Skills:</span> <span>UI/UX Design, Performance Optimisation, RESTful API Integration, Agile/Scrum</span></li>
-                                    <li class="d-flex"><span>Interests:</span> <span>Full-Stack Development, UI/UX Trends, Performance Optimisation, Travelling</span></li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="counter-wrap ftco-animate d-flex mt-md-3">
-                            <div class="text">
-                                <p><a href="https://www.linkedin.com/in/amol-shinde-718a39351/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resume Section -->
-    <section class="ftco-section ftco-no-pb" id="resume-section">
-        <div class="container">
-            <div class="row justify-content-center pb-5">
-                <div class="col-md-10 heading-section text-center ftco-animate">
-                    <h1 class="big big-2">Resume</h1>
-                    <h2 class="mb-4">Resume</h2>
-                    <p>Angular Front-End Developer with nearly 3 years of experience delivering high-performance, scalable SPAs using Angular 16–20 (currently Angular 20), TypeScript, NgRx, and RxJS. Hands-on exposure to ASP.NET Core Web API, SQL, and Prismatic for enterprise third-party integrations. Delivered measurable impact — reduced bundle sizes by 45%, improved load times by 35%, and boosted test coverage from 65% to 90% across legal, insurance, and e-commerce domains.</p>
-                </div>
-            </div>
-
-            <!-- Experience -->
-            <div class="row">
-                <h1 class="big-4">Experience</h1>
-                <div class="underline"></div>
-            </div>
-            <br>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="resume-wrap ftco-animate">
-                        <span class="date">April 2025 – Present</span>
-                        <h2>Front-End Developer</h2>
-                        <span class="position">Xperate Limited, Pune</span>
-                        <p class="mt-4">Xperate Limited is a Pune-based software company delivering custom legal tech solutions including case management, workflow automation, and enterprise system integrations.</p>
-                        <ul>
-                            <li>Built scalable <strong>Angular 20</strong> SPAs using standalone components, Angular Signals, and OnPush change detection, improving rendering efficiency by 25% on data-heavy enterprise screens.</li>
-                            <li>Architected <strong>NgRx-based state management</strong> for complex legal workflows, reducing redundant API calls by 20% and ensuring predictable data flow across all modules.</li>
-                            <li>Developed a <strong>reusable component library</strong> standardising UI patterns across projects, accelerating feature delivery by 30% and reducing cross-team code duplication.</li>
-                            <li>Integrated <strong>Prismatic</strong> as a third-party integration platform to connect enterprise systems, automating data exchange workflows and eliminating manual service handoffs.</li>
-                            <li>Collaborated with <strong>ASP.NET Core Web API</strong> backend team, gaining hands-on exposure to API design, SQL queries, and full-stack debugging practices.</li>
-                            <li>Improved unit and e2e test coverage from <strong>65% to 90%</strong> using Jasmine and Karma, reducing production defects by 35%.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="resume-wrap ftco-animate">
-                        <span class="date">July 2023 – February 2025</span>
-                        <h2>Front-End Developer</h2>
-                        <span class="position">ANG Software, Pune</span>
-                        <p class="mt-4">ANG Software is a technology-focused company delivering scalable web applications across insurance and enterprise domains.</p>
-                        <ul>
-                            <li>Designed and delivered <strong>Angular 16</strong> modules with reactive forms, dynamic validations, and JWT-based authentication, supporting 10,000+ active users across insurance and e-commerce platforms.</li>
-                            <li>Reduced initial page load time by <strong>35%</strong> through lazy loading, AOT compilation, and strategic bundle splitting, directly improving Core Web Vitals scores.</li>
-                            <li>Built <strong>RxJS-powered real-time data streams</strong> for live policy updates and order tracking, reducing perceived latency by 25%.</li>
-                            <li>Enforced <strong>OnPush change detection</strong> across complex UI modules, eliminating unnecessary render cycles and improving performance on low-end devices.</li>
-                            <li>Improved sprint predictability and on-time delivery by 20% through Agile best practices and structured code review standards.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <br><br>
-
-            <!-- Key Projects -->
-            <div class="row">
-                <h1 class="big-4">Key Projects</h1>
-                <div class="underline"></div>
-            </div>
-            <br>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="resume-wrap ftco-animate">
-                        <span class="date">April 2025 – Present</span>
-                        <h2>Legal Case Management System</h2>
-                        <span class="position">Angular 20, NgRx, RxJS, ASP.NET Web API, Syncfusion Grid, Prismatic</span>
-                        <p class="mt-4">Enterprise legal workflow platform for managing cases, documents, and client data at scale.</p>
-                        <ul>
-                            <li>Designed modular architecture using standalone components, Angular Signals, and NgRx Store — reduced development time by 30%.</li>
-                            <li>Integrated Prismatic to automate document exchange between external legal systems, eliminating manual data entry.</li>
-                            <li>Built responsive dashboards with Syncfusion Grid for large datasets, improving reporting accuracy and reducing case review time by 20%.</li>
-                            <li>Implemented Signal-based reactive forms with real-time validation and NgRx state sync, reducing form submission errors.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="resume-wrap ftco-animate">
-                        <span class="date">January 2024 – February 2025</span>
-                        <h2>Insurance Management Platform</h2>
-                        <span class="position">Angular 16, RxJS, RESTful API, Bootstrap</span>
-                        <p class="mt-4">Multi-module insurance platform supporting policy management, claims processing, and role-based access for 10,000+ users.</p>
-                        <ul>
-                            <li>Architected multi-module Angular app with shared services and component libraries, reducing codebase duplication by 40%.</li>
-                            <li>Implemented JWT-based role authentication and granular route guards, ensuring secure access across all product modules.</li>
-                            <li>Developed complex reactive form workflows for policy submission and claims, reducing form errors by 30%.</li>
-                            <li>Integrated API caching and OnPush change detection, enhancing app performance by 20% during peak usage.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="resume-wrap ftco-animate">
-                        <span class="date">July 2023 – January 2024</span>
-                        <h2>E-Commerce Platform</h2>
-                        <span class="position">Angular, JavaScript, RESTful API, Bootstrap</span>
-                        <p class="mt-4">Dynamic e-commerce platform with product management, smart search, and checkout for smooth end-to-end shopping experiences.</p>
-                        <ul>
-                            <li>Built dynamic product listing, smart search filters, and checkout flow, achieving a <strong>Lighthouse score of 95+</strong> with full Core Web Vitals compliance.</li>
-                            <li>Integrated REST APIs for real-time inventory and order management, reducing front-end data errors by 25%.</li>
-                            <li>Optimised responsive UI for all device sizes using Bootstrap, improving conversion rates and overall user satisfaction.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <br><br>
-
-            <!-- Education -->
-            <div class="row">
-                <h1 class="big-4">Education</h1>
-                <div class="underline"></div>
-            </div>
-            <br>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="resume-wrap ftco-animate">
-                        <span class="date">2016 – 2018</span>
-                        <h2>Master of Science in Computer Science</h2>
-                        <span class="position">Greenfingers College of Computer &amp; Technology, Akluj, Maharashtra</span>
-                        <p class="mt-4">Grade: First Class with Distinction.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="resume-wrap ftco-animate">
-                        <span class="date">2012 – 2015</span>
-                        <h2>Bachelor of Computer Science</h2>
-                        <span class="position">Vidya Pratishthans Commerce &amp; Science College, Indapur, Maharashtra</span>
-                        <p class="mt-4">Grade: First Class with Distinction.</p>
-                    </div>
-                </div>
-            </div>
-            <br><br>
-
-            <!-- Certifications -->
-            <div class="row">
-                <h1 class="big-4">Certifications &amp; Achievements</h1>
-                <div class="underline"></div>
-            </div>
-            <br>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="resume-wrap ftco-animate">
-                        <h2>Advanced Angular Development</h2>
-                        <span class="position">Certification</span>
-                        <p class="mt-4">Demonstrated expertise in modern Angular architecture, performance optimisation, NgRx state management, and enterprise-grade SPA development.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="resume-wrap ftco-animate">
-                        <h2>State-Level Sports Certificate</h2>
-                        <span class="position">Achievement</span>
-                        <p class="mt-4">Recognised for outstanding performance at the state level, reflecting strong discipline, teamwork, and a competitive growth mindset.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justify-content-center mt-5">
-                <div class="col-md-6 text-center ftco-animate">
-                    <p><a href="https://drive.google.com/file/d/1FNTs9CtZq1JO00ZsDxGyrB2CyR5NyfY-/view?usp=drive_link"
-                            class="btn btn-primary py-4 px-5">Download CV</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-        <div class="container">
-            <div class="row justify-content-center mb-5 pb-3">
-                <div class="col-md-7 heading-section text-center ftco-animate">
-                    <h1 class="big big-2">Contact</h1>
-                    <h2 class="mb-4">Contact Me</h2>
-                    <p>Below are the details to reach out to me!</p>
-                </div>
-            </div>
-
-            <div class="row d-flex contact-info mb-5">
-                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                    <div class="align-self-stretch box p-4 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="icon-map-signs"></span>
-                        </div>
-                        <h3 class="mb-4">Address</h3>
-                        <p>Pune, India</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                    <div class="align-self-stretch box p-4 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="icon-phone2"></span>
-                        </div>
-                        <h3 class="mb-4">Contact Number</h3>
-                        <p><a href="tel://917020429440">+91 7020429440</a></p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                    <div class="align-self-stretch box p-4 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="icon-paper-plane"></span>
-                        </div>
-                        <h3 class="mb-4">Email Address</h3>
-                        <p>
-                            <a href="mailto:amolinfo9@gmail.com?subject=Inquiry from Portfolio&body=Hi Amol,%0D%0A%0D%0AI would like to connect with you regarding...">
-                                amolinfo9@gmail.com
-                            </a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-                    <div class="align-self-stretch box p-4 text-center">
-                        <div class="icon d-flex align-items-center justify-content-center">
-                            <span class="icon-globe"></span>
-                        </div>
-                        <h3 class="mb-4">Download Resume</h3>
-                        <p><a href="https://drive.google.com/file/d/1FNTs9CtZq1JO00ZsDxGyrB2CyR5NyfY-/view?usp=drive_link">Resume Link</a></p>
-                    </div>
-                </div>
-
-                <div class="container">
-                    <br><br>
-                    <div class="row justify-content-center">
-                        <div class="col-md-7 ftco-animate text-center">
-                            <h2>Have a <span>Question?</span> <a href="https://forms.gle/hSeHa7me5HK6SFuMA"
-                                    class="btn btn-primary py-3 px-5">Click Here</a></h2>
-                        </div>
-                    </div>
-                    <br>
-                    <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
-                        <li class="ftco-animate normal-txt">Find me on </li>
-                        <li class="ftco-animate">
-                            <a href="https://www.linkedin.com/in/amol-shinde-718a39351/">
-                                <span class="icon-linkedin"></span>
-                            </a>
-                        </li>
-                    </ul>
-                    <br>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="ftco-footer ftco-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 text-center">
-                    <p>
-                        Copyright &copy;
-                        <script>document.write(new Date().getFullYear());</script>
-                        All rights reserved | This template is made with
-                        <i class="icon-heart color-danger" aria-hidden="true"></i> by
-                        <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Loader -->
-    <div id="ftco-loader" class="show fullscreen">
-        <svg class="circular" width="48px" height="48px">
-            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" />
-        </svg>
     </div>
+</nav>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="js/jquery.animateNumber.min.js"></script>
-    <script src="js/scrollax.min.js"></script>
-    <script src="js/main.js"></script>
+<!-- Home Section -->
+<section id="home-section" class="hero">
+    <div class="home-slider owl-carousel">
+        <div class="slider-item">
+            <div class="overlay"></div>
+            <div class="container">
+                <div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end" data-scrollax-parent="true">
+                    <div class="one-third js-fullheight order-md-last img" style="background-image:url(images/);">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="one-forth d-flex align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+                        <div class="text">
+                            <span class="subheading">Hello!</span>
+                            <h1 class="mb-4 mt-3">I'm <span>Amol Shinde</span></h1>
+                            <span id="typing-animation"></span>
+                            <script>
+                                const typingAnimationElement = document.getElementById('typing-animation');
+                                const typingTexts = [
+                                    'Angular Developer  ',
+                                    'TypeScript & JavaScript Expert   ',
+                                    'Full-Stack Explorer (Angular + ASP.NET)  ',
+                                    'Master of Science in Computer Science  ',
+                                ];
+                                function playTypingAnimation(text) {
+                                    for (let i = 0; i < text.length; i++) {
+                                        setTimeout(() => { typingAnimationElement.textContent += text[i]; }, i * 200);
+                                    }
+                                    setTimeout(() => {
+                                        typingAnimationElement.textContent = '';
+                                        playTypingAnimation(typingTexts[(typingTexts.indexOf(text) + 1) % typingTexts.length]);
+                                    }, text.length * 200);
+                                }
+                                playTypingAnimation(typingTexts[0]);
+                            </script>
+                            <br><br>
+                            <h2>A Front-End Developer</h2>
+                            <p>
+                                <a href="https://github.com/amolinfo9/" class="btn btn-primary py-3 px-4">My Works</a>
+                                <a href="https://www.linkedin.com/in/amol-shinde-718a39351/" class="btn btn-white btn-outline-white py-3 px-4">LinkedIn</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<!-- About Section -->
+<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+    <div class="container">
+        <div class="row">
+            <div class="row d-flex align-items-stretch">
+                <div class="col-md-6 col-lg-5 d-flex">
+                    <div class="img-about img d-flex align-items-stretch">
+                        <div class="overlay">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-5">
+                                    <div class="about-img">
+                                        <img src="images/about-me.png" class="img-fluid rounded b-shadow-a" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-7">
+                                    <div class="about-info">
+                                        <p><span class="title-s">Name: </span><span>Amol Shinde</span></p>
+                                        <p><span class="title-s">Job Role: </span><span>Front-End Developer</span></p>
+                                        <p><span class="title-s">Experience: </span><span>Nearly 3 Years</span></p>
+                                        <p><span class="title-s">Address: </span><span>Pune, India</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-mf">
+                                <p class="title-s">Skills</p>
+                                <span>Angular 16–20 (currently Angular 20)</span> <span class="pull-right">95%</span>
+                                <div class="progress"><div class="progress-bar" role="progressbar" style="width:95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                <span>TypeScript / JavaScript (ES6+)</span> <span class="pull-right">95%</span>
+                                <div class="progress"><div class="progress-bar" role="progressbar" style="width:95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                <span>RxJS / NgRx State Management</span> <span class="pull-right">90%</span>
+                                <div class="progress"><div class="progress-bar" role="progressbar" style="width:90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                <span>Responsive Web Design</span> <span class="pull-right">90%</span>
+                                <div class="progress"><div class="progress-bar" role="progressbar" style="width:90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                <span>RESTful API Integration</span> <span class="pull-right">88%</span>
+                                <div class="progress"><div class="progress-bar" role="progressbar" style="width:88%" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div></div>
+                                <span>ASP.NET Core Web API (Learning)</span> <span class="pull-right">55%</span>
+                                <div class="progress"><div class="progress-bar" role="progressbar" style="width:55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+                    <div class="row justify-content-start pb-3">
+                        <div class="col-md-12 heading-section ftco-animate">
+                            <h1 class="big">About</h1>
+                            <h2 class="mb-4">About Me</h2>
+                            <p>With nearly 3 years of experience (2 years 8 months) in front-end development, I specialise in building scalable, high-performance Single Page Applications (SPAs) using <strong>Angular 16–20 (currently Angular 20)</strong>, TypeScript, NgRx, and RxJS. I have delivered enterprise-grade applications across Legal Case Management, Insurance, and E-commerce domains, with a strong focus on performance, user experience, and maintainability.</p>
+                            <p>Proficient in state management, REST API integration, reactive forms, lazy loading, AOT compilation, and bundle size optimisation — improved application load times by up to 45% and accelerated feature delivery by 30%. Hands-on exposure to <strong>ASP.NET Core Web API and SQL</strong> while actively expanding toward full-stack development. Experienced in Agile environments with strong cross-functional collaboration skills.</p>
+                            <p>Passionate about crafting intuitive, responsive, and user-centric interfaces while continuously exploring the latest Angular features, performance techniques, and full-stack development practices.</p>
+                            <ul class="about-info mt-4 px-md-0 px-2">
+                                <li class="d-flex"><span>Profile:</span><span>Front-End Developer (Angular)</span></li>
+                                <li class="d-flex"><span>Experience:</span><span>Nearly 3 Years (2 Years 8 Months)</span></li>
+                                <li class="d-flex"><span>Domain:</span><span>Legal Case Management, Insurance, E-commerce</span></li>
+                                <li class="d-flex"><span>Education:</span><span>Master of Science in Computer Science</span></li>
+                                <li class="d-flex"><span>Languages:</span><span>English, Hindi, Marathi</span></li>
+                                <li class="d-flex"><span>Technologies:</span><span>Angular 16–20, TypeScript, JavaScript, RxJS, NgRx, Angular Signals, Standalone Components</span></li>
+                                <li class="d-flex"><span>Back-End (Learning):</span><span>ASP.NET Core Web API, C# Basics, SQL</span></li>
+                                <li class="d-flex"><span>Dev Tools:</span><span>Git, Bitbucket, JIRA, VS Code, Visual Studio 2022, IntelliJ IDEA, Azure DevOps</span></li>
+                                <li class="d-flex"><span>Other Skills:</span><span>UI/UX Design, Performance Optimisation, RESTful API Integration, Agile/Scrum</span></li>
+                                <li class="d-flex"><span>Interests:</span><span>Full-Stack Development, UI/UX Trends, Performance Optimisation, Travelling</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                        <div class="text">
+                            <p><a href="https://www.linkedin.com/in/amol-shinde-718a39351/" class="btn btn-primary py-3 px-3">LinkedIn</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Resume Section -->
+<section class="ftco-section ftco-no-pb" id="resume-section">
+    <div class="container">
+        <div class="row justify-content-center pb-5">
+            <div class="col-md-10 heading-section text-center ftco-animate">
+                <h1 class="big big-2">Resume</h1>
+                <h2 class="mb-4">Resume</h2>
+                <p>Angular Front-End Developer with nearly 3 years of experience building high-performance, scalable SPAs using Angular 16–20 (currently Angular 20), TypeScript, NgRx, and RxJS. Hands-on exposure to ASP.NET Core Web API and SQL while actively expanding toward full-stack development. Delivered measurable impact — reduced bundle sizes by 45%, improved load times by 35%, and boosted test coverage from 65% to 90% across legal, insurance, and e-commerce domains.</p>
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="row"><h1 class="big-4">Experience</h1><div class="underline"></div></div><br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">April 2025 – Present</span>
+                    <h2>Front-End Developer</h2>
+                    <span class="position">Xperate Limited, Pune</span>
+                    <p class="mt-4">Xperate Limited is a Pune-based software company delivering custom legal tech solutions including case management, workflow automation, and enterprise system integrations.</p>
+                    <ul>
+                        <li>Built scalable <strong>Angular 20</strong> SPAs using standalone components, Angular Signals, and OnPush change detection, improving rendering efficiency by 25% on data-heavy enterprise screens.</li>
+                        <li>Architected <strong>NgRx-based state management</strong> for complex legal workflows, reducing redundant API calls by 20% and ensuring predictable, traceable data flow across all modules.</li>
+                        <li>Developed a <strong>reusable component library</strong> standardising UI patterns across projects, accelerating feature delivery by 30% and significantly reducing cross-team code duplication.</li>
+                        <li>Integrated <strong>Prismatic</strong> as a third-party integration platform to connect enterprise systems, automating data exchange workflows and reducing manual service handoffs between teams.</li>
+                        <li>Collaborated with <strong>ASP.NET Core Web API</strong> backend team, gaining hands-on exposure to API design, request-response contracts, SQL queries, and full-stack debugging practices.</li>
+                        <li>Improved unit and e2e test coverage from <strong>65% to 90%</strong> using Jasmine and Karma, reducing production defects by 35% and strengthening overall release quality.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">July 2023 – February 2025</span>
+                    <h2>Front-End Developer</h2>
+                    <span class="position">ANG Software, Pune</span>
+                    <p class="mt-4">ANG Software is a technology-focused company delivering scalable web applications across insurance and enterprise domains.</p>
+                    <ul>
+                        <li>Designed and delivered <strong>Angular 16</strong> modules with reactive forms, dynamic validations, and JWT-based authentication, supporting 10,000+ active users across insurance and e-commerce platforms.</li>
+                        <li>Reduced initial page load time by <strong>35%</strong> through lazy loading, AOT compilation, and strategic bundle splitting, directly improving Core Web Vitals scores and user retention.</li>
+                        <li>Built <strong>RxJS-powered real-time data streams</strong> for live policy updates and order tracking, reducing perceived latency by 25% and improving overall user experience significantly.</li>
+                        <li>Enforced <strong>OnPush change detection</strong> across complex UI modules, eliminating unnecessary render cycles and improving performance noticeably on low-end devices.</li>
+                        <li>Improved sprint predictability and on-time delivery by 20% through Agile best practices, structured code reviews, and well-defined team standards.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <!-- Key Projects -->
+        <div class="row"><h1 class="big-4">Key Projects</h1><div class="underline"></div></div><br>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">April 2025 – Present</span>
+                    <h2>Legal Case Management System</h2>
+                    <span class="position">Angular 20, NgRx, RxJS, ASP.NET Web API, Syncfusion Grid, Angular Signals</span>
+                    <p class="mt-4">Enterprise legal workflow platform for managing cases, documents, hearings, and client data at scale — built with the latest Angular 20 features.</p>
+                    <ul>
+                        <li>Designed modular architecture using <strong>standalone components, Angular Signals, and NgRx Store</strong>, reducing development time by 30% and improving cross-team delivery consistency.</li>
+                        <li>Implemented <strong>Signal-based memory management</strong> to auto-release component-level state, preventing memory leaks and improving stability across long-running sessions.</li>
+                        <li>Built <strong>print functionality</strong> for legal case reports using Angular's component rendering pipeline, enabling formatted, court-ready document output directly from the browser.</li>
+                        <li>Leveraged <strong>RxJS latest operators</strong> (takeUntilDestroyed, toSignal, fromEvent) for cleaner async flows and improved stream lifecycle management across modules.</li>
+                        <li>Adopted Angular's <strong>inject() function</strong> for component-level dependency injection in standalone components, improving code readability and testability.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">January 2024 – February 2025</span>
+                    <h2>Insurance Management Platform</h2>
+                    <span class="position">Angular 16, RxJS, RESTful API, Bootstrap</span>
+                    <p class="mt-4">Multi-module insurance platform supporting policy management, claims processing, and role-based access control for 10,000+ users.</p>
+                    <ul>
+                        <li>Architected a multi-module Angular app with shared services and component libraries, reducing codebase duplication by <strong>40%</strong> and cutting new developer onboarding time.</li>
+                        <li>Implemented <strong>JWT-based role authentication</strong> and granular route guards, ensuring secure access control across 10,000+ users and multiple product modules.</li>
+                        <li>Developed complex <strong>reactive form workflows</strong> for policy submission and claims processing, reducing form errors by 30% and improving user experience across devices.</li>
+                        <li>Integrated <strong>API caching and OnPush change detection</strong>, enhancing app performance by 20% and reducing unnecessary server load during peak usage periods.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">July 2023 – January 2024</span>
+                    <h2>E-Commerce Platform</h2>
+                    <span class="position">Angular, JavaScript, RESTful API, Bootstrap</span>
+                    <p class="mt-4">Dynamic e-commerce platform featuring product management, smart search, cart, and checkout — optimised for performance and conversion.</p>
+                    <ul>
+                        <li>Built dynamic product listing, smart search filters, and checkout flow, achieving a <strong>Lighthouse performance score of 95+</strong> with full Core Web Vitals compliance.</li>
+                        <li>Integrated REST APIs for real-time inventory and order management, reducing front-end data errors by 25% and improving conversion rates through faster, reliable interactions.</li>
+                        <li>Optimised responsive UI for all device sizes, improving user satisfaction and cross-browser compatibility across the full shopping experience.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <!-- Education -->
+        <div class="row"><h1 class="big-4">Education</h1><div class="underline"></div></div><br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">2016 – 2018</span>
+                    <h2>Master of Science in Computer Science</h2>
+                    <span class="position">Greenfingers College of Computer &amp; Technology, Akluj, Maharashtra</span>
+                    <p class="mt-4">Grade: First Class with Distinction.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="resume-wrap ftco-animate">
+                    <span class="date">2012 – 2015</span>
+                    <h2>Bachelor of Computer Science</h2>
+                    <span class="position">Vidya Pratishthans Commerce &amp; Science College, Indapur, Maharashtra</span>
+                    <p class="mt-4">Grade: First Class with Distinction.</p>
+                </div>
+            </div>
+        </div>
+        <br><br>
+
+        <!-- Certifications -->
+        <div class="row"><h1 class="big-4">Certifications &amp; Achievements</h1><div class="underline"></div></div><br>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="resume-wrap ftco-animate">
+                    <h2>Advanced Angular Development</h2>
+                    <span class="position">Certification</span>
+                    <p class="mt-4">Demonstrated expertise in modern Angular architecture, performance optimisation, NgRx state management, and enterprise-grade SPA development.</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="resume-wrap ftco-animate">
+                    <h2>State-Level Sports Certificate</h2>
+                    <span class="position">Achievement</span>
+                    <p class="mt-4">Recognised for outstanding performance at the state level, reflecting strong discipline, teamwork, and a competitive growth mindset.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-6 text-center ftco-animate">
+                <p><a href="https://drive.google.com/file/d/1FNTs9CtZq1JO00ZsDxGyrB2CyR5NyfY-/view?usp=drive_link" class="btn btn-primary py-4 px-5">Download CV</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+    <div class="container">
+        <div class="row justify-content-center mb-5 pb-3">
+            <div class="col-md-7 heading-section text-center ftco-animate">
+                <h1 class="big big-2">Contact</h1>
+                <h2 class="mb-4">Contact Me</h2>
+                <p>Below are the details to reach out to me!</p>
+            </div>
+        </div>
+        <div class="row d-flex contact-info mb-5">
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                <div class="align-self-stretch box p-4 text-center">
+                    <div class="icon d-flex align-items-center justify-content-center"><span class="icon-map-signs"></span></div>
+                    <h3 class="mb-4">Address</h3>
+                    <p>Pune, India</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                <div class="align-self-stretch box p-4 text-center">
+                    <div class="icon d-flex align-items-center justify-content-center"><span class="icon-phone2"></span></div>
+                    <h3 class="mb-4">Contact Number</h3>
+                    <p><a href="tel://917020429440">+91 7020429440</a></p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                <div class="align-self-stretch box p-4 text-center">
+                    <div class="icon d-flex align-items-center justify-content-center"><span class="icon-paper-plane"></span></div>
+                    <h3 class="mb-4">Email Address</h3>
+                    <p><a href="mailto:amolinfo9@gmail.com?subject=Inquiry from Portfolio&body=Hi Amol,%0D%0A%0D%0AI would like to connect with you regarding...">amolinfo9@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                <div class="align-self-stretch box p-4 text-center">
+                    <div class="icon d-flex align-items-center justify-content-center"><span class="icon-globe"></span></div>
+                    <h3 class="mb-4">Download Resume</h3>
+                    <p><a href="https://drive.google.com/file/d/1FNTs9CtZq1JO00ZsDxGyrB2CyR5NyfY-/view?usp=drive_link">Resume Link</a></p>
+                </div>
+            </div>
+            <div class="container">
+                <br><br>
+                <div class="row justify-content-center">
+                    <div class="col-md-7 ftco-animate text-center">
+                        <h2>Have a <span>Question?</span> <a href="https://forms.gle/hSeHa7me5HK6SFuMA" class="btn btn-primary py-3 px-5">Click Here</a></h2>
+                    </div>
+                </div>
+                <br>
+                <ul class="ftco-footer-social list-unstyled d-flex justify-content-center align-items-center mb-0">
+                    <li class="ftco-animate normal-txt">Find me on </li>
+                    <li class="ftco-animate"><a href="https://www.linkedin.com/in/amol-shinde-718a39351/"><span class="icon-linkedin"></span></a></li>
+                </ul>
+                <br>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="ftco-footer ftco-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="ftco-loader" class="show fullscreen">
+    <svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/>
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/>
+    </svg>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
